@@ -4,65 +4,99 @@ import {
   StyleSheet,
   Animated,
   Button,
+  Platform,
+  ScrollView,
+  TouchableOpacity,
   View
 } from 'react-native'
 import { connect } from 'react-redux'
+import { NavigationActions } from 'react-navigation'
 import { show, hide } from '../action/home.js'
+const navigateAction = (routeName, params) => {
+    return NavigationActions.navigate({
+        routeName,
+        params
+    })
+}
+
+const ExampleRoutes = {
+  QRScanScreen: {
+    routeName: 'QRScan',
+    name: '扫一扫',
+    description: '扫一扫',
+    params: {
+      onScanResultReceived(e) {
+        const resetAction = NavigationActions.reset({
+          index: 1,
+          actions: [
+            NavigationActions.navigate({ routeName: 'Home'}),
+            NavigationActions.navigate({ routeName: 'QRScanResult', params: {result: e}})
+          ]
+        })
+        this.props.navigation.dispatch(resetAction)
+      }      
+    }
+  }
+};
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f6f6f6'
+  item: {
+    backgroundColor: '#fff',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: '#ddd',
   },
-  view: {
-    flexDirection: 'row' 
+  image: {
+    width: 120,
+    height: 120,
+    alignSelf: 'center',
+    marginBottom: 20,
+    resizeMode: 'contain',
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#444',
+  },
+  description: {
+    fontSize: 13,
+    color: '#999',
   }
 })
 @connect(state => ({
   status: state.home.status
 }), dispatch => ({
   showFunc: () => dispatch(show()),
-  hideFunc: () => dispatch(hide())
+  hideFunc: () => dispatch(hide()),
+  navGo: (routeName, params) => dispatch(navigateAction(routeName, params))
 }))
 export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      shake: new Animated.Value(0)
     }    
-  }
-  pressFunc() {
-    if(this.props.status == 'show') {
-      this.props.hideFunc()
-      this.setState({shake: new Animated.Value(0)})
-    } else {
-      this.props.showFunc()
-      Animated.timing(
-        this.state.shake,
-        {
-          toValue: 1,
-          duration: 1000
-        }
-      ).start()      
-    }
   }
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.view}>
-          <Text style={{fontSize: 20}}>Hello </Text>
-          {
-            this.props.status == 'show' ?  <Animated.Text style={{opacity: this.state.shake, fontSize: 20}}>MIC</Animated.Text> : <Text style={{fontSize: 20}}>World</Text>
-          }
-        </View>
-        <Button
-          onPress={() => {this.pressFunc()}}
-          title={this.props.status}
-          color="#841584"
-        />
-      </View>
+      <ScrollView>
+        {Object.keys(ExampleRoutes).map((item) => (
+          <TouchableOpacity
+            key={item}
+            onPress={() => {
+              const { routeName, params } = ExampleRoutes[item]
+              this.props.navGo(routeName, params)
+            }}
+          >
+            <View style={styles.item}>
+              <Text style={styles.title}>{ExampleRoutes[item].name}</Text>
+              <Text style={styles.description}>
+                {ExampleRoutes[item].description}
+              </Text>
+            </View>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
     )
   }
 }
