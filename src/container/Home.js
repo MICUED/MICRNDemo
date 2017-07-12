@@ -18,7 +18,6 @@ const navigateAction = (routeName, params) => {
         params
     })
 }
-
 const ExampleRoutes = {
   QRScanScreen: {
     routeName: 'QRScan',
@@ -36,6 +35,11 @@ const ExampleRoutes = {
         this.props.navigation.dispatch(resetAction)
       }      
     }
+  },
+  ImageCacheScreen: {
+    routeName: 'ImageCache',
+    name: '图片缓存',
+    description: '图片缓存'    
   }
 };
 
