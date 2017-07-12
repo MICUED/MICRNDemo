@@ -1,8 +1,8 @@
 # MICRNDemo
 
-这是一个基于micrn项目的一个demo
+这是一个基于micrn项目的一个demo
 
-1. 运行
+1. 运行
 
 ```
 npm install
@@ -13,7 +13,7 @@ npm install
 ```
 yarn install
 ```
-2.由于部分组件是原生开发，wrapper了一层js，因此需要link组件到项目
+2.由于部分组件是原生开发，wrapper了一层js，因此需要link组件到项目
 
 ```
 react-native link
