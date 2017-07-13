@@ -27,18 +27,8 @@ const routes = {
 }
 
 const stackNavigatorConfig = {
-    navigationOptions: {
-        headerBackTitle: null,
-        headerTintColor: '#454545',
-        showIcon: true,
-        swipeEnabled: false,
-        animationEnabled: false,
-        headerStyle: {
-            backgroundColor: '#f2f2f2'
-        }
-    },
     mode: 'card',
-    headerMode: 'float',
+    headerMode: 'none',
     transitionConfig: (() => ({
         screenInterpolator: CardStackStyleInterpolator.forHorizontal
     }))
