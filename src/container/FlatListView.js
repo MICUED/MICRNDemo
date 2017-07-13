@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import { StyleSheet, Text, FlatList, View, Button, Animated, RefreshControl } from 'react-native'
+import React, { Component } from "react"
+import { StyleSheet, Text, FlatList, View, Button, Animated, RefreshControl } from "react-native"
 
 const flatData = new Array(15).fill(0).map((value, index) => {
     return { key: index }
 })
 
-const footerText = ['加载中 ~~~', '已经到头了 ~~~']
+const footerText = ["加载中 ~~~", "已经到头了 ~~~"]
 
 class FlatListView extends Component {
     _keyExtractor = (item, index) => item.key;
 
     _separator = () => {
-        return <View style={{ height: 2, backgroundColor: 'yellow' }} />;
+        return <View style={{ height: 2, backgroundColor: "yellow" }} />
     }
 
     _header = () => {
-        return <Text style={[styles.txt, { backgroundColor: 'black' }]}>这是头部</Text>;
+        return <Text style={[styles.txt, { backgroundColor: "black" }]}>这是头部</Text>
     }
 
     _footer = () => {
-        return <Text style={{ textAlign: 'center', flex: 1, height: 30, fontSize: 12, lineHeight: 30 }}>{footerText[+this.state.isEnded]}</Text>;
+        return <Text style={{ textAlign: "center", flex: 1, height: 30, fontSize: 12, lineHeight: 30 }}>{footerText[+this.state.isEnded]}</Text>
     }
 
     _onRefresh = () => {
@@ -37,17 +37,17 @@ class FlatListView extends Component {
                     })
                 }, 2500)
             }}
-            title={'load...'}
-            tintColor={'#ff0000'}
-            colors={['#fff']}
-            progressBackgroundColor={'#ffff00'} />
+            title={"load..."}
+            tintColor={"#ff0000"}
+            colors={["#fff"]}
+            progressBackgroundColor={"#ffff00"} />
     }
 
     _renderItem = (item) => {
         return <Text style={[{
             flex: 1,
             height: 80,
-            backgroundColor: item.index % 2 === 0 ? 'red' : 'blue'
+            backgroundColor: item.index % 2 === 0 ? "red" : "blue"
         }, styles.txt]}>{item.index}</Text>
     }
     _onEndReached = (info) => {
@@ -74,25 +74,25 @@ class FlatListView extends Component {
     }
 
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             listData: flatData,
             loading: false,
             isEnded: false,
             isRefresh: false
-        };
+        }
     }
 
     render() {
         return (<View style={{ flex: 1 }}>
             <Button title='滚动到头部' onPress={() => {
-                this._flatList.scrollToOffset({ animated: true, offset: 0 });
+                this._flatList.scrollToOffset({ animated: true, offset: 0 })
             }} />
             <Button title='滚动到第八个点' onPress={() => {
-                this._flatList.scrollToIndex({ viewPosition: 0, index: 8 });
+                this._flatList.scrollToIndex({ viewPosition: 0, index: 8 })
             }} />
             <Button title='滚动到末尾' onPress={() => {
-                this._flatList.scrollToEnd();
+                this._flatList.scrollToEnd()
             }} />
             <View style={{ flex: 1 }}>
                 <FlatList
@@ -117,11 +117,11 @@ class FlatListView extends Component {
 }
 const styles = StyleSheet.create({
     txt: {
-        textAlign: 'center',
-        textAlignVertical: 'center',
-        color: 'white',
+        textAlign: "center",
+        textAlignVertical: "center",
+        color: "white",
         fontSize: 30,
     }
-});
+})
 
 export default FlatListView

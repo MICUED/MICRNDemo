@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { StackNavigator } from 'react-navigation'
-import HomeScreen from './container/Home.js'
-import QRScanScreen from './components/QRScan.js'
-import QRScanResultScreen from './container/QRScanResult.js'
-import ImageCacheScreen from './container/ImageCache.js'
-import FlatListView from './container/FlatListView.js'
-import CardStackStyleInterpolator from 'react-navigation/src/views/CardStackStyleInterpolator'
+import React, { Component } from "react"
+import { StackNavigator } from "react-navigation"
+import HomeScreen from "./container/Home.js"
+import QRScanScreen from "./components/QRScan.js"
+import QRScanResultScreen from "./container/QRScanResult.js"
+import ImageCacheScreen from "./container/ImageCache.js"
+import FlatListView from "./container/FlatListView.js"
+import CardStackStyleInterpolator from "react-navigation/src/views/CardStackStyleInterpolator"
 
 const paramsToProps = (SomeComponent) => {
     return class extends Component {
@@ -27,11 +27,11 @@ const routes = {
 }
 
 const stackNavigatorConfig = {
-    mode: 'card',
-    headerMode: 'none',
+    mode: "card",
+    headerMode: "none",
     transitionConfig: (() => ({
         screenInterpolator: CardStackStyleInterpolator.forHorizontal
     }))
-};
+}
 
 export const AppNavigator = StackNavigator(routes, stackNavigatorConfig)
