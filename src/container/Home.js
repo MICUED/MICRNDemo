@@ -13,10 +13,10 @@ import { connect } from 'react-redux'
 import { NavigationActions } from 'react-navigation'
 import { show, hide } from '../action/home.js'
 const navigateAction = (routeName, params) => {
-    return NavigationActions.navigate({
-        routeName,
-        params
-    })
+  return NavigationActions.navigate({
+    routeName,
+    params
+  })
 }
 const ExampleRoutes = {
   QRScanScreen: {
@@ -28,18 +28,23 @@ const ExampleRoutes = {
         const resetAction = NavigationActions.reset({
           index: 1,
           actions: [
-            NavigationActions.navigate({ routeName: 'Home'}),
-            NavigationActions.navigate({ routeName: 'QRScanResult', params: {result: e}})
+            NavigationActions.navigate({ routeName: 'Home' }),
+            NavigationActions.navigate({ routeName: 'QRScanResult', params: { result: e } })
           ]
         })
         this.props.navigation.dispatch(resetAction)
-      }      
+      }
     }
   },
   ImageCacheScreen: {
     routeName: 'ImageCache',
     name: '图片缓存',
-    description: '图片缓存'    
+    description: '图片缓存'
+  },
+  FlatListView: {
+    routeName: 'FlatListView',
+    name: '列表',
+    description: '列表'
   }
 };
 
@@ -79,8 +84,12 @@ export default class HomeScreen extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-    }    
+    }
   }
+  static navigationOptions = {
+    title: 'MICRN DEMO'
+  }
+
   render() {
     return (
       <ScrollView>

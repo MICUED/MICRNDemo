@@ -16,7 +16,7 @@ export default function configureStore(initialNavState) {
   const store = createStore(reducer, initialNavState, middle);
   if (module.hot) {
     module.hot.accept(() => {
-      store.replaceReducer(require('./reducer/index.js').default);
+      store.replaceReducer(require('./reducer/index.js'));
     });
   }
   return store;
