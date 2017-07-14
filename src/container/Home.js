@@ -45,6 +45,11 @@ const ExampleRoutes = {
         routeName: "FlatListView",
         name: "列表",
         description: "列表"
+    },
+    BaiduAmapView: {
+        routeName: "BaiduAmapView",
+        name: "地图定位",
+        description: "地图定位"
     }
 }
 
