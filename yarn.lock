@@ -3644,9 +3644,9 @@ react-devtools-core@^2.0.8:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-baidu-map@^0.6.0:
+"react-native-baidu-map@git+https://github.com/lovebing/react-native-baidu-map.git":
   version "0.6.0"
-  resolved "http://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-0.6.0.tgz#cb4937181e8e0cd2125d347a5b87ca13971647dd"
+  resolved "git+https://github.com/lovebing/react-native-baidu-map.git#9950d8c028ba91f13cc4f9d04b28da5ac217901d"
 
 react-native-cached-image@^1.3.4:
   version "1.3.4"
