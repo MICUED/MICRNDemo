@@ -36,3 +36,5 @@ iOS运行，需要安装xcode
 ```
 react-native run-ios
 ```
+
+5.此分支添加百度地图组件，使用时，需要将/android/app/src/main/java/com/micrndemo/MainApplication.java中new BaiduMapPackage()给删除，方可正确使用
