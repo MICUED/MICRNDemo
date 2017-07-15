@@ -29,3 +29,4 @@ iOS运行，需要安装xcode
 ```
 react-native run-ios
 ```
+⚠️地图组件暂时在baiduMap分支中提供[地图分支](https://github.com/MICUED/MICRNDemo/tree/baiduMap)
