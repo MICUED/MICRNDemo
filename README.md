@@ -29,6 +29,13 @@ iOS运行，需要安装xcode
 ```
 react-native run-ios
 ```
+
+4、使用聊天室，请配合服务使用
+```
+yarn ssw
+```
+
 ⚠️地图组件暂时在baiduMap分支中提供[地图分支](https://github.com/MICUED/MICRNDemo/tree/baiduMap)<br>
 ⚠️推送组件暂时在push分支中提供[消息通知](https://github.com/MICUED/MICRNDemo/tree/push)<br>
 ⚠️奔溃及错误日志展示组件暂时在errLog分支中提供[errLog](https://github.com/MICUED/MICRNDemo/tree/errLog)<br>
+⚠️奔溃及错误日志展示组件暂时在errLog分支中提供[chatroom](https://github.com/MICUED/MICRNDemo/tree/chatroom)<br>

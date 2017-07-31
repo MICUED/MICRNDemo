@@ -1,43 +1,46 @@
 {
-  "name": "MICRNDemo",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "lint": "eslint 'src/**/*.@(js|jsx)' --fix",
-    "validate": "npm ls"
-  },
-  "dependencies": {
-    "axios": "^0.16.2",
-    "prop-types": "^15.5.10",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.44.3",
-    "react-native-cached-image": "^1.3.4",
-    "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
-    "react-navigation": "^1.0.0-beta.11",
-    "react-redux": "^5.0.5",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "20.0.3",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-react-native": "^1.9.2",
-    "eslint": "^4.2.0",
-    "eslint-plugin-react": "^7.1.0",
-    "jest": "20.0.4",
-    "precommit-hook": "^3.0.0",
-    "react-test-renderer": "16.0.0-alpha.6"
-  },
-  "jest": {
-    "preset": "react-native"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+    "name": "MICRNDemo",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node node_modules/react-native/local-cli/cli.js start",
+        "test": "jest",
+        "lint": "eslint 'src/**/*.@(js|jsx)' --fix",
+        "validate": "npm ls",
+        "ssw": "node wsserver"
+    },
+    "dependencies": {
+        "axios": "^0.16.2",
+        "prop-types": "^15.5.10",
+        "react": "16.0.0-alpha.6",
+        "react-native": "0.44.3",
+        "react-native-cached-image": "^1.3.4",
+        "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
+        "react-native-gifted-chat": "^0.2.5",
+        "react-navigation": "^1.0.0-beta.11",
+        "react-redux": "^5.0.5",
+        "redux": "^3.6.0",
+        "redux-thunk": "^2.2.0",
+        "ws": "^3.1.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.24.1",
+        "babel-eslint": "^7.2.3",
+        "babel-jest": "20.0.3",
+        "babel-plugin-transform-decorators-legacy": "^1.3.4",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-react-native": "^1.9.2",
+        "eslint": "^4.2.0",
+        "eslint-plugin-react": "^7.1.0",
+        "jest": "20.0.4",
+        "precommit-hook": "^3.0.0",
+        "react-test-renderer": "16.0.0-alpha.6"
+    },
+    "jest": {
+        "preset": "react-native"
+    },
+    "pre-commit": [
+        "lint"
+    ]
 }

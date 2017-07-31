@@ -45,6 +45,11 @@ const ExampleRoutes = {
         routeName: "FlatListView",
         name: "列表",
         description: "列表"
+    },
+    ChatRoom: {
+        routeName: "ChatRoom",
+        name: "聊天室",
+        description: "聊天室"
     }
 }
 
