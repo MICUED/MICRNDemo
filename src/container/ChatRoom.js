@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react"
 import {
     Platform,
     StyleSheet,
     Text,
     View,
-} from 'react-native';
+} from "react-native"
 
-import { GiftedChat, Actions, Bubble } from 'react-native-gifted-chat';
+import { GiftedChat, Actions, Bubble } from "react-native-gifted-chat"
 export default class Example extends React.Component {
 
     state = {
@@ -14,27 +14,27 @@ export default class Example extends React.Component {
     };
 
     componentWillMount() {
-        const ws = new WebSocket('ws://localhost:3000');
+        const ws = new WebSocket("ws://localhost:3000")
 
         ws.onopen = () => {
             // 打开一个连接
-        };
+        }
 
         ws.onmessage = (e) => {
             // 接收到了一个消息
-            console.log(e.data);
-            this.onReceive(e.data);
-        };
+            console.log(e.data)
+            this.onReceive(e.data)
+        }
 
         ws.onerror = (e) => {
             // 发生了一个错误
-            console.log(e.message);
-        };
+            console.log(e.message)
+        }
 
         ws.onclose = (e) => {
             // 连接被关闭了
-            console.log(e.code, e.reason);
-        };
+            console.log(e.code, e.reason)
+        }
 
 
         this.setState({
@@ -42,16 +42,16 @@ export default class Example extends React.Component {
             messages: [
                 {
                     _id: 1,
-                    text: 'Hello developer',
+                    text: "Hello developer",
                     createdAt: new Date(),
                     user: {
                         _id: 2,
-                        name: 'React Native',
-                        avatar: 'https://facebook.github.io/react/img/logo_og.png',
+                        name: "React Native",
+                        avatar: "https://facebook.github.io/react/img/logo_og.png",
                     },
                 },
             ],
-        });
+        })
 
 
     }
@@ -65,18 +65,18 @@ export default class Example extends React.Component {
                     createdAt: new Date(),
                     user: {
                         _id: 2,
-                        name: 'React Native',
-                        avatar: 'https://facebook.github.io/react/img/logo_og.png',
+                        name: "React Native",
+                        avatar: "https://facebook.github.io/react/img/logo_og.png",
                     },
                 }),
-            };
-        });
+            }
+        })
     }
 
     onSend(messages = []) {
         this.setState((previousState) => ({
             messages: GiftedChat.append(previousState.messages, messages),
-        }));
+        }))
         this.state.ws.send("diyigechaxun")
     }
 
@@ -89,7 +89,7 @@ export default class Example extends React.Component {
                     _id: 1,
                 }}
             />
-        );
+        )
     }
 
 }
