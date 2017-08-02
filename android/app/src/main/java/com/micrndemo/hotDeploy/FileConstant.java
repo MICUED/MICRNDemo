@@ -52,5 +52,5 @@ public class FileConstant {
     /**
      * 下载URL
      */
-    public static final String JS_BUNDLE_REMOTE_URL = "http://192.168.100.67:9000/version";
+    public static final String JS_BUNDLE_REMOTE_URL = "http://10.100.161.60:9000/version";
 }
