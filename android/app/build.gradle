@@ -92,6 +92,13 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+       manifestPlaceholders = [
+             MI_APPID: "2882303761517599402",
+             MI_APPKEY: "5351759930402",
+           JPUSH_APPKEY: "913c24e53c0d7ede41e828ae",
+       APP_CHANNEL: "developer-default"
+        ]
+
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -126,6 +133,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-mixpush')
     compile project(':react-native-vector-icons')
     compile project(':react-native-baidu-map')
     compile project(':bugsnag-react-native')

@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.widget.Toast;
 
 import com.facebook.react.ReactApplication;
+import com.shuxun.react_native_mixpush.MixPushPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
 import com.bugsnag.BugsnagReactNative;
@@ -38,6 +39,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+            new MixPushPackage(),
             new VectorIconsPackage(),
             new BaiduMapPackage(),
             BugsnagReactNative.getPackage(),
