@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -67,6 +68,36 @@
 		CEE2172A50F6426ABB66DB35 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 076F8C25EC7B4BFBB7F10600 /* FontAwesome.ttf */; };
 		D9788B6FCBEC4D95A14F7D61 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7915418C5C7843C484FE3C38 /* libRNVectorIcons.a */; };
 		EF645EF880AB482288B7D869 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477218ABCBBB42DBA77E166D /* Zocial.ttf */; };
+		F19CA6B41F31AD3600F6971F /* MICDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6841F31AD3600F6971F /* MICDownLoad.m */; };
+		F19CA6B51F31AD3600F6971F /* MICGetBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6861F31AD3600F6971F /* MICGetBundle.m */; };
+		F19CA6B61F31AD3600F6971F /* MICShouldUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6881F31AD3600F6971F /* MICShouldUpdate.m */; };
+		F19CA6B71F31AD3600F6971F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19CA68A1F31AD3600F6971F /* Info.plist */; };
+		F19CA6B81F31AD3600F6971F /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA68E1F31AD3600F6971F /* aes_ni.c */; };
+		F19CA6B91F31AD3600F6971F /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6901F31AD3600F6971F /* aescrypt.c */; };
+		F19CA6BA1F31AD3600F6971F /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6911F31AD3600F6971F /* aeskey.c */; };
+		F19CA6BB1F31AD3600F6971F /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6931F31AD3600F6971F /* aestab.c */; };
+		F19CA6BC1F31AD3600F6971F /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6971F31AD3600F6971F /* fileenc.c */; };
+		F19CA6BD1F31AD3600F6971F /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6991F31AD3600F6971F /* hmac.c */; };
+		F19CA6BE1F31AD3600F6971F /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA69B1F31AD3600F6971F /* prng.c */; };
+		F19CA6BF1F31AD3600F6971F /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA69D1F31AD3600F6971F /* pwd2key.c */; };
+		F19CA6C01F31AD3600F6971F /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA69F1F31AD3600F6971F /* sha1.c */; };
+		F19CA6C11F31AD3600F6971F /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6A11F31AD3600F6971F /* crypt.c */; };
+		F19CA6C21F31AD3600F6971F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6A31F31AD3600F6971F /* ioapi.c */; };
+		F19CA6C31F31AD3600F6971F /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6A51F31AD3600F6971F /* ioapi_buf.c */; };
+		F19CA6C41F31AD3600F6971F /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6A71F31AD3600F6971F /* ioapi_mem.c */; };
+		F19CA6C51F31AD3600F6971F /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6A91F31AD3600F6971F /* minishared.c */; };
+		F19CA6C61F31AD3600F6971F /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6AB1F31AD3600F6971F /* unzip.c */; };
+		F19CA6C71F31AD3600F6971F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6AD1F31AD3600F6971F /* zip.c */; };
+		F19CA6C81F31AD3600F6971F /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = F19CA6B01F31AD3600F6971F /* SSZipArchive.m */; };
+		F19CA6C91F31AD3600F6971F /* Version.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19CA6B31F31AD3600F6971F /* Version.plist */; };
+		F19CA7181F31B76200F6971F /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA70C1F31B76200F6971F /* bell.png */; };
+		F19CA7191F31B76200F6971F /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA70D1F31B76200F6971F /* heart.png */; };
+		F19CA71A1F31B76200F6971F /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA70E1F31B76200F6971F /* rocket.png */; };
+		F19CA71B1F31B76200F6971F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA70F1F31B76200F6971F /* star.png */; };
+		F19CA71C1F31B76200F6971F /* back-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA7141F31B76200F6971F /* back-icon.png */; };
+		F19CA71D1F31B76200F6971F /* back-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA7151F31B76200F6971F /* back-icon@2x.png */; };
+		F19CA71E1F31B76200F6971F /* back-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19CA7161F31B76200F6971F /* back-icon@3x.png */; };
+		F19CA71F1F31B76200F6971F /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = F19CA7171F31B76200F6971F /* main.jsbundle */; };
 		F5BCF69011B741EF865776F6 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 362ED370997344F48C35D518 /* libRCTCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -298,7 +329,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
@@ -358,6 +388,60 @@
 		A6219A12CDA14CD0AB038491 /* libRNFetchBlob.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFetchBlob.a; sourceTree = "<group>"; };
 		A8FBBA808A8741B682BADC13 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		B53386628091402DB0D13217 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		F19CA6831F31AD3600F6971F /* MICDownLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICDownLoad.h; sourceTree = "<group>"; };
+		F19CA6841F31AD3600F6971F /* MICDownLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICDownLoad.m; sourceTree = "<group>"; };
+		F19CA6851F31AD3600F6971F /* MICGetBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICGetBundle.h; sourceTree = "<group>"; };
+		F19CA6861F31AD3600F6971F /* MICGetBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICGetBundle.m; sourceTree = "<group>"; };
+		F19CA6871F31AD3600F6971F /* MICShouldUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICShouldUpdate.h; sourceTree = "<group>"; };
+		F19CA6881F31AD3600F6971F /* MICShouldUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICShouldUpdate.m; sourceTree = "<group>"; };
+		F19CA68A1F31AD3600F6971F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19CA68D1F31AD3600F6971F /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		F19CA68E1F31AD3600F6971F /* aes_ni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
+		F19CA68F1F31AD3600F6971F /* aes_ni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
+		F19CA6901F31AD3600F6971F /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		F19CA6911F31AD3600F6971F /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		F19CA6921F31AD3600F6971F /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		F19CA6931F31AD3600F6971F /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		F19CA6941F31AD3600F6971F /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		F19CA6951F31AD3600F6971F /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		F19CA6961F31AD3600F6971F /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		F19CA6971F31AD3600F6971F /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		F19CA6981F31AD3600F6971F /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		F19CA6991F31AD3600F6971F /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		F19CA69A1F31AD3600F6971F /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		F19CA69B1F31AD3600F6971F /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		F19CA69C1F31AD3600F6971F /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		F19CA69D1F31AD3600F6971F /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		F19CA69E1F31AD3600F6971F /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		F19CA69F1F31AD3600F6971F /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		F19CA6A01F31AD3600F6971F /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		F19CA6A11F31AD3600F6971F /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		F19CA6A21F31AD3600F6971F /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		F19CA6A31F31AD3600F6971F /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		F19CA6A41F31AD3600F6971F /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		F19CA6A51F31AD3600F6971F /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		F19CA6A61F31AD3600F6971F /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		F19CA6A71F31AD3600F6971F /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		F19CA6A81F31AD3600F6971F /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		F19CA6A91F31AD3600F6971F /* minishared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
+		F19CA6AA1F31AD3600F6971F /* minishared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
+		F19CA6AB1F31AD3600F6971F /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		F19CA6AC1F31AD3600F6971F /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		F19CA6AD1F31AD3600F6971F /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		F19CA6AE1F31AD3600F6971F /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		F19CA6AF1F31AD3600F6971F /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		F19CA6B01F31AD3600F6971F /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		F19CA6B11F31AD3600F6971F /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		F19CA6B21F31AD3600F6971F /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		F19CA6B31F31AD3600F6971F /* Version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Version.plist; sourceTree = "<group>"; };
+		F19CA70C1F31B76200F6971F /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		F19CA70D1F31B76200F6971F /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		F19CA70E1F31B76200F6971F /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
+		F19CA70F1F31B76200F6971F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		F19CA7141F31B76200F6971F /* back-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon.png"; sourceTree = "<group>"; };
+		F19CA7151F31B76200F6971F /* back-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@2x.png"; sourceTree = "<group>"; };
+		F19CA7161F31B76200F6971F /* back-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-icon@3x.png"; sourceTree = "<group>"; };
+		F19CA7171F31B76200F6971F /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		FB625AD67A374BE98702622F /* BugsnagReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BugsnagReactNative.xcodeproj; path = "../node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -374,6 +458,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4283D2D07B86405EADBBF173 /* libz.tbd in Frameworks */,
 				72B705771F18771D00963810 /* libstdc++.6.0.9.tbd in Frameworks */,
 				72B705751F18771700963810 /* CoreTelephony.framework in Frameworks */,
 				72B705731F18771000963810 /* libsqlite3.0.tbd in Frameworks */,
@@ -405,7 +490,6 @@
 				F5BCF69011B741EF865776F6 /* libRCTCamera.a in Frameworks */,
 				A47EE893D55741C78770E893 /* libRNFetchBlob.a in Frameworks */,
 				80E9DE7F2776417788732E5C /* libBugsnagReactNative.a in Frameworks */,
-				4283D2D07B86405EADBBF173 /* libz.tbd in Frameworks */,
 				D9788B6FCBEC4D95A14F7D61 /* libRNVectorIcons.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,10 +600,19 @@
 			isa = PBXGroup;
 			children = (
 				72B705781F18774200963810 /* mapapi.bundle */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				F19CA6831F31AD3600F6971F /* MICDownLoad.h */,
+				F19CA7061F31B76200F6971F /* assets */,
+				F19CA7171F31B76200F6971F /* main.jsbundle */,
+				F19CA6841F31AD3600F6971F /* MICDownLoad.m */,
+				F19CA6851F31AD3600F6971F /* MICGetBundle.h */,
+				F19CA6861F31AD3600F6971F /* MICGetBundle.m */,
+				F19CA6871F31AD3600F6971F /* MICShouldUpdate.h */,
+				F19CA6881F31AD3600F6971F /* MICShouldUpdate.m */,
+				F19CA6891F31AD3600F6971F /* SSZipArchive */,
+				F19CA6B31F31AD3600F6971F /* Version.plist */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -688,6 +781,154 @@
 				F19CA6011F31A26300F6971F /* libRNVectorIcons.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F19CA6891F31AD3600F6971F /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA68A1F31AD3600F6971F /* Info.plist */,
+				F19CA68B1F31AD3600F6971F /* minizip */,
+				F19CA6AF1F31AD3600F6971F /* SSZipArchive.h */,
+				F19CA6B01F31AD3600F6971F /* SSZipArchive.m */,
+				F19CA6B11F31AD3600F6971F /* SSZipCommon.h */,
+				F19CA6B21F31AD3600F6971F /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		F19CA68B1F31AD3600F6971F /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA68C1F31AD3600F6971F /* aes */,
+				F19CA6A11F31AD3600F6971F /* crypt.c */,
+				F19CA6A21F31AD3600F6971F /* crypt.h */,
+				F19CA6A31F31AD3600F6971F /* ioapi.c */,
+				F19CA6A41F31AD3600F6971F /* ioapi.h */,
+				F19CA6A51F31AD3600F6971F /* ioapi_buf.c */,
+				F19CA6A61F31AD3600F6971F /* ioapi_buf.h */,
+				F19CA6A71F31AD3600F6971F /* ioapi_mem.c */,
+				F19CA6A81F31AD3600F6971F /* ioapi_mem.h */,
+				F19CA6A91F31AD3600F6971F /* minishared.c */,
+				F19CA6AA1F31AD3600F6971F /* minishared.h */,
+				F19CA6AB1F31AD3600F6971F /* unzip.c */,
+				F19CA6AC1F31AD3600F6971F /* unzip.h */,
+				F19CA6AD1F31AD3600F6971F /* zip.c */,
+				F19CA6AE1F31AD3600F6971F /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		F19CA68C1F31AD3600F6971F /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA68D1F31AD3600F6971F /* aes.h */,
+				F19CA68E1F31AD3600F6971F /* aes_ni.c */,
+				F19CA68F1F31AD3600F6971F /* aes_ni.h */,
+				F19CA6901F31AD3600F6971F /* aescrypt.c */,
+				F19CA6911F31AD3600F6971F /* aeskey.c */,
+				F19CA6921F31AD3600F6971F /* aesopt.h */,
+				F19CA6931F31AD3600F6971F /* aestab.c */,
+				F19CA6941F31AD3600F6971F /* aestab.h */,
+				F19CA6951F31AD3600F6971F /* brg_endian.h */,
+				F19CA6961F31AD3600F6971F /* brg_types.h */,
+				F19CA6971F31AD3600F6971F /* fileenc.c */,
+				F19CA6981F31AD3600F6971F /* fileenc.h */,
+				F19CA6991F31AD3600F6971F /* hmac.c */,
+				F19CA69A1F31AD3600F6971F /* hmac.h */,
+				F19CA69B1F31AD3600F6971F /* prng.c */,
+				F19CA69C1F31AD3600F6971F /* prng.h */,
+				F19CA69D1F31AD3600F6971F /* pwd2key.c */,
+				F19CA69E1F31AD3600F6971F /* pwd2key.h */,
+				F19CA69F1F31AD3600F6971F /* sha1.c */,
+				F19CA6A01F31AD3600F6971F /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		F19CA7061F31B76200F6971F /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7071F31B76200F6971F /* node_modules */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		F19CA7071F31B76200F6971F /* node_modules */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7081F31B76200F6971F /* react-native-elements */,
+				F19CA7101F31B76200F6971F /* react-navigation */,
+			);
+			path = node_modules;
+			sourceTree = "<group>";
+		};
+		F19CA7081F31B76200F6971F /* react-native-elements */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7091F31B76200F6971F /* src */,
+			);
+			path = "react-native-elements";
+			sourceTree = "<group>";
+		};
+		F19CA7091F31B76200F6971F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA70A1F31B76200F6971F /* rating */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F19CA70A1F31B76200F6971F /* rating */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA70B1F31B76200F6971F /* images */,
+			);
+			path = rating;
+			sourceTree = "<group>";
+		};
+		F19CA70B1F31B76200F6971F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA70C1F31B76200F6971F /* bell.png */,
+				F19CA70D1F31B76200F6971F /* heart.png */,
+				F19CA70E1F31B76200F6971F /* rocket.png */,
+				F19CA70F1F31B76200F6971F /* star.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F19CA7101F31B76200F6971F /* react-navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7111F31B76200F6971F /* src */,
+			);
+			path = "react-navigation";
+			sourceTree = "<group>";
+		};
+		F19CA7111F31B76200F6971F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7121F31B76200F6971F /* views */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F19CA7121F31B76200F6971F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7131F31B76200F6971F /* assets */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F19CA7131F31B76200F6971F /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F19CA7141F31B76200F6971F /* back-icon.png */,
+				F19CA7151F31B76200F6971F /* back-icon@2x.png */,
+				F19CA7161F31B76200F6971F /* back-icon@3x.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 		F1C11EAD1F15F93E00A20AF0 /* Products */ = {
@@ -1114,18 +1355,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B705791F18774200963810 /* mapapi.bundle in Resources */,
+				F19CA6C91F31AD3600F6971F /* Version.plist in Resources */,
+				F19CA71F1F31B76200F6971F /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F19CA71A1F31B76200F6971F /* rocket.png in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				4ABC7C3CEEAA490AA1DD8529 /* Entypo.ttf in Resources */,
 				98ED42DDDF8047FD82716A7E /* EvilIcons.ttf in Resources */,
 				CEE2172A50F6426ABB66DB35 /* FontAwesome.ttf in Resources */,
+				F19CA6B71F31AD3600F6971F /* Info.plist in Resources */,
 				0E20FEF6AB5A425F813DBEBE /* Foundation.ttf in Resources */,
 				4EDC8D17ECB94C77BE4D3722 /* Ionicons.ttf in Resources */,
+				F19CA71D1F31B76200F6971F /* back-icon@2x.png in Resources */,
+				F19CA7181F31B76200F6971F /* bell.png in Resources */,
+				F19CA71B1F31B76200F6971F /* star.png in Resources */,
 				B78424E86944479486195D97 /* MaterialCommunityIcons.ttf in Resources */,
 				7F0AF956B1F94E0EBDBAEC7A /* MaterialIcons.ttf in Resources */,
 				AD8DA7E2798746EE907C0F57 /* Octicons.ttf in Resources */,
+				F19CA7191F31B76200F6971F /* heart.png in Resources */,
 				5F0F228445C347CEACA5BD29 /* SimpleLineIcons.ttf in Resources */,
+				F19CA71E1F31B76200F6971F /* back-icon@3x.png in Resources */,
 				EF645EF880AB482288B7D869 /* Zocial.ttf in Resources */,
+				F19CA71C1F31B76200F6971F /* back-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,7 +1441,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19CA6C41F31AD3600F6971F /* ioapi_mem.c in Sources */,
+				F19CA6B61F31AD3600F6971F /* MICShouldUpdate.m in Sources */,
+				F19CA6B51F31AD3600F6971F /* MICGetBundle.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				F19CA6BA1F31AD3600F6971F /* aeskey.c in Sources */,
+				F19CA6C01F31AD3600F6971F /* sha1.c in Sources */,
+				F19CA6C61F31AD3600F6971F /* unzip.c in Sources */,
+				F19CA6BB1F31AD3600F6971F /* aestab.c in Sources */,
+				F19CA6BD1F31AD3600F6971F /* hmac.c in Sources */,
+				F19CA6C51F31AD3600F6971F /* minishared.c in Sources */,
+				F19CA6C81F31AD3600F6971F /* SSZipArchive.m in Sources */,
+				F19CA6BE1F31AD3600F6971F /* prng.c in Sources */,
+				F19CA6BF1F31AD3600F6971F /* pwd2key.c in Sources */,
+				F19CA6C31F31AD3600F6971F /* ioapi_buf.c in Sources */,
+				F19CA6C11F31AD3600F6971F /* crypt.c in Sources */,
+				F19CA6C21F31AD3600F6971F /* ioapi.c in Sources */,
+				F19CA6B41F31AD3600F6971F /* MICDownLoad.m in Sources */,
+				F19CA6B81F31AD3600F6971F /* aes_ni.c in Sources */,
+				F19CA6B91F31AD3600F6971F /* aescrypt.c in Sources */,
+				F19CA6C71F31AD3600F6971F /* zip.c in Sources */,
+				F19CA6BC1F31AD3600F6971F /* fileenc.c in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
