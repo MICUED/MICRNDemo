@@ -3,6 +3,8 @@ package com.micrndemo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.lovebing.reactnative.baidumap.BaiduMapPackage;
+import com.bugsnag.BugsnagReactNative;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import com.facebook.react.ReactNativeHost;
@@ -27,6 +29,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+            new BaiduMapPackage(),
+            BugsnagReactNative.getPackage(),
                     new RNFetchBlobPackage(),
                     new RCTCameraPackage(),
                     new BaiduMapPackage(getApplicationContext())

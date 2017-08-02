@@ -11,13 +11,15 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-
+#import <BugsnagReactNative/BugsnagReactNative.h>
 #import "RCTBaiduMapViewManager.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [BugsnagReactNative start];
   NSURL *jsCodeLocation;
   
   [RCTBaiduMapViewManager initSDK:@"geyeVHGlgl88pizCjQRZAvH0jftQHqwk"];//百度api key

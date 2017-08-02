@@ -6,6 +6,7 @@ import QRScanResultScreen from "./container/QRScanResult.js"
 import ImageCacheScreen from "./container/ImageCache.js"
 import FlatListView from "./container/FlatListView.js"
 import BaiduAmapView from "./container/BaiduAmapView.js"
+import ErrLogView from "./container/ErrLogView.js"
 import CardStackStyleInterpolator from "react-navigation/src/views/CardStackStyleInterpolator"
 
 const paramsToProps = (SomeComponent) => {
@@ -25,7 +26,8 @@ const routes = {
     QRScanResult: { screen: paramsToProps(QRScanResultScreen) },
     ImageCache: { screen: paramsToProps(ImageCacheScreen) },
     FlatListView: { screen: paramsToProps(FlatListView) },
-    BaiduAmapView: { screen: paramsToProps(BaiduAmapView) }
+    BaiduAmapView: { screen: paramsToProps(BaiduAmapView) },
+    ErrLogView: { screen: paramsToProps(ErrLogView) }
 }
 
 const stackNavigatorConfig = {

@@ -50,6 +50,11 @@ const ExampleRoutes = {
         routeName: "BaiduAmapView",
         name: "地图定位",
         description: "地图定位"
+    },
+    ErrLogView: {
+        routeName: "ErrLogView",
+        name: "日志",
+        description: "日志"
     }
 }
 
