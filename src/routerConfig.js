@@ -7,6 +7,7 @@ import ImageCacheScreen from "./container/ImageCache.js"
 import FlatListView from "./container/FlatListView.js"
 import BaiduAmapView from "./container/BaiduAmapView.js"
 import ErrLogView from "./container/ErrLogView.js"
+import UIView from "./container/UIView.js"
 import CardStackStyleInterpolator from "react-navigation/src/views/CardStackStyleInterpolator"
 
 const paramsToProps = (SomeComponent) => {
@@ -27,7 +28,8 @@ const routes = {
     ImageCache: { screen: paramsToProps(ImageCacheScreen) },
     FlatListView: { screen: paramsToProps(FlatListView) },
     BaiduAmapView: { screen: paramsToProps(BaiduAmapView) },
-    ErrLogView: { screen: paramsToProps(ErrLogView) }
+    ErrLogView: { screen: paramsToProps(ErrLogView) },
+    UIView: { screen: paramsToProps(UIView) },
 }
 
 const stackNavigatorConfig = {
