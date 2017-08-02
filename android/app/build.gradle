@@ -126,6 +126,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-vector-icons')
     compile project(':react-native-baidu-map')
     compile project(':bugsnag-react-native')
     compile project(':react-native-fetch-blob')

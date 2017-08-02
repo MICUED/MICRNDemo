@@ -55,6 +55,11 @@ const ExampleRoutes = {
         routeName: "ErrLogView",
         name: "日志",
         description: "日志"
+    },
+    UIView: {
+        routeName: "UIView",
+        name: "UI",
+        description: "UI"
     }
 }
 
