@@ -41,7 +41,7 @@ public class FileConstant {
     /**
      * zip文件
      */
-    public static final String JS_PATCH_LOCAL_PATH = JS_PATCH_LOCAL_FOLDER + File.separator + ZIP_NAME + "_CACHE" + ".zip";
+    public static final String JS_PATCH_LOCAL_PATH = JS_PATCH_LOCAL_FOLDER + File.separator + ZIP_NAME + ".zip";
 
     /**
      * 解压后的bundle文件保存路径

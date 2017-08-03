@@ -25,15 +25,9 @@ public class FileUtils {
             ZipEntry zipEntry;
             String szName;
             isFolderExists(FileConstant.FUTURE_JS_PATCH_LOCAL_FOLDER);
-            String zipWrapName = null;
             try {
                 while ((zipEntry = inZip.getNextEntry()) != null) {
-
-                    if (zipWrapName == null) {
-                        zipWrapName = zipEntry.getName();
-                        continue;
-                    }
-                    szName = zipEntry.getName().replace(zipWrapName, "");
+                    szName = zipEntry.getName();
                     if (zipEntry.isDirectory()) {
 
                         szName = szName.substring(0, szName.length() - 1);
