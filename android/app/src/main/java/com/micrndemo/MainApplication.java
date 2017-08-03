@@ -9,7 +9,9 @@ import android.widget.Toast;
 import com.facebook.react.ReactApplication;
 import com.shuxun.react_native_mixpush.MixPushPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
+
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
+
 import com.bugsnag.BugsnagReactNative;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
@@ -39,10 +41,10 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-            new MixPushPackage(),
-            new VectorIconsPackage(),
-            new BaiduMapPackage(),
-            BugsnagReactNative.getPackage(),
+                    new MixPushPackage(),
+                    new VectorIconsPackage(),
+//                    new BaiduMapPackage(),
+                    BugsnagReactNative.getPackage(),
                     new RNFetchBlobPackage(),
                     new RCTCameraPackage(),
                     new BaiduMapPackage(getApplicationContext())
@@ -52,12 +54,17 @@ public class MainApplication extends Application implements ReactApplication {
         @Nullable
         @Override
         protected String getJSBundleFile() {
-            File file = new File (FileConstant.JS_BUNDLE_LOCAL_PATH);
-            if(file != null && file.exists()) {
+            File file = new File(FileConstant.JS_BUNDLE_LOCAL_PATH);
+            if (file != null && file.exists()) {
                 return FileConstant.JS_BUNDLE_LOCAL_PATH;
             } else {
                 return super.getJSBundleFile();
             }
+        }
+
+        protected @javax.annotation.Nullable
+        String getBundleAssetName() {
+            return "main.jsbundle";
         }
     };
 
@@ -79,7 +86,7 @@ public class MainApplication extends Application implements ReactApplication {
 
             @Override
             public void onActivityStarted(Activity activity) {
-                if(activity instanceof MainActivity){
+                if (activity instanceof MainActivity) {
 //                    Toast.makeText(activity, "开始检查", Toast.LENGTH_SHORT).show();
                     ((MainActivity) activity).checkVersion();
                 }

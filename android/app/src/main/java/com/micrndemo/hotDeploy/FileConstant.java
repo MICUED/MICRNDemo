@@ -21,7 +21,7 @@ public class FileConstant {
     /**
      * bundle文件名
      */
-    public static final String JS_BUNDLE_LOCAL_FILE = "index.android.bundle";
+    public static final String JS_BUNDLE_LOCAL_FILE = "main.jsbundle";
 
     public static final String VERSION_FILE = "version.txt";
     /**

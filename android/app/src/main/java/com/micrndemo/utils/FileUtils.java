@@ -21,15 +21,19 @@ public class FileUtils {
     //解压缩
     public static void decompression() {
         try {
-
             ZipInputStream inZip = new ZipInputStream(new FileInputStream(FileConstant.JS_PATCH_LOCAL_PATH));
             ZipEntry zipEntry;
             String szName;
             isFolderExists(FileConstant.FUTURE_JS_PATCH_LOCAL_FOLDER);
+            String zipWrapName = null;
             try {
                 while ((zipEntry = inZip.getNextEntry()) != null) {
 
-                    szName = zipEntry.getName();
+                    if (zipWrapName == null) {
+                        zipWrapName = zipEntry.getName();
+                        continue;
+                    }
+                    szName = zipEntry.getName().replace(zipWrapName, "");
                     if (zipEntry.isDirectory()) {
 
                         szName = szName.substring(0, szName.length() - 1);
@@ -52,6 +56,7 @@ public class FileUtils {
                         fos.close();
                     }
                 }
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -65,6 +70,7 @@ public class FileUtils {
 
     /**
      * 获取Assets目录下的bundle文件
+     *
      * @return
      */
     public static String getJsBundleFromAssets(Context context) {
@@ -76,7 +82,7 @@ public class FileUtils {
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
-            result = new String(buffer,"UTF-8");
+            result = new String(buffer, "UTF-8");
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -86,6 +92,7 @@ public class FileUtils {
 
     /**
      * 遍历删除文件夹下所有文件
+     *
      * @param filePath
      */
     public static void traversalFile(String filePath) {
@@ -93,7 +100,7 @@ public class FileUtils {
         if (file.exists()) {
             File[] files = file.listFiles();
             for (File f : files) {
-                if(f.isDirectory()) {
+                if (f.isDirectory()) {
                     traversalFile(f.getAbsolutePath());
                 } else {
                     f.delete();
@@ -105,17 +112,19 @@ public class FileUtils {
 
     /**
      * 删除指定File
+     *
      * @param filePath
      */
     public static void deleteFile(String filePath) {
         File patFile = new File(filePath);
-        if(patFile.exists()) {
+        if (patFile.exists()) {
             patFile.delete();
         }
     }
 
     /**
      * 检测文件夹是否存在，不存在则新建
+     *
      * @param strFolder
      */
     public static boolean isFolderExists(String strFolder) {
